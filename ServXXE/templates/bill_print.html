@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill "${bill_name}"</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Name</th><th>quantity</th><th>Price</th>
+    </tr>
+    <#list products as product>
+        <tr>
+            <td>${product.name}</td>
+            <td>${product.quantity}</td>
+            <td>${product.price}</td>
+        </tr>
+    </#list>
+    <tr>
+        <td><b>TOTAL:</b></td><td></td><td>${total_price}</td>
+    </tr>
+</table>
+</body>
+</html>
